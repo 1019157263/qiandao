@@ -1,0 +1,28 @@
+import datetime
+import os
+def qian():
+
+   import requests
+   
+   li=[eval(i) for i in open(os.getcwd()+'/qian.config','r+')]
+   for i in li:
+       b=requests.get(i['url'],headers=i['header'],cookies=i['cookie'])
+       try:
+          print(b.json())
+          c=str(datetime.datetime.now())
+          a={'time':c,'data':b.json()['message']}
+          f=open('qian.log','a+')
+          f.write('\n')
+          f.write(str(a))
+       except:
+          print(b.text)
+          f=open('qian.log','a+')
+          c=str(datetime.datetime.now())
+          a={'time':c,'data':b.json()['message']}
+          f.write('\n')
+          f.write(str(a))
+      
+#qian()
+
+ 
+

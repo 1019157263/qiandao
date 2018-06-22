@@ -1,0 +1,45 @@
+<html ng-app="ionicApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>添加签到任务</title>
+        <link href="https://cdn.bootcss.com/ionic/1.3.2/css/ionic.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.min.js"></script>
+    </head>
+    <body>
+    
+    <div class="bar bar-header">
+      <div class="h1 title">添加签到任务</div>
+    </div>
+    ​<form method="post" action="/add">
+    <div class="content has-header">
+      <div class="list">
+        <label class="item item-input">
+          <input name='name' type="text" placeholder="名称">
+        </label>
+        <label class="item item-input">
+          <input name='url'  type="text" placeholder="URL">
+        </label>
+        
+        <label class="item item-input">
+          <input name='cookie' type="text" placeholder="COOKIES">
+        </label>
+        <label class="item item-input">
+          <input name='header'  type="text" placeholder="HEADERS">
+        </label>
+        
+            <label class="item item-input">
+          <input name='fk'  type="text" placeholder="请求方式(GET or POST)">
+        </label>
+           <label class="item item-input">
+          <input name='data'  type="text" placeholder="POST提交的数据">
+        </label>
+        
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive">添加</button>
+      </div>
+    </div>
+    </from>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<html ng-app="ionicApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>后台管理</title>
+        <link href="https://cdn.bootcss.com/ionic/1.3.2/css/ionic.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.min.js"></script>
+    </head>
+    <body>
+    
+    <div class="bar">
+    	<div class="h1 title">
+          签到状态(欢迎您{{q}})
+       </div>
+    	</div>
+    <div class="content has-header ionic-pseudo">
+      <div class="list list-inset">
+       {%for i in f %}
+        <div class="item">
+           时间:{{i['time']}}
+           </br>
+          状态:{{i['data']}}
+        </div>
+       {%end%}
+     </div>
+    </div>
+  </body>
+</html>
