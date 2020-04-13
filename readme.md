@@ -8,29 +8,29 @@
 
 不需要配置数据库！！！
 
-. 放到：F:\qiandao\qiandao目录下
-. 安装对应依赖库
-安装python3环境
-cmd执行
+# 放到：F:\qiandao\qiandao目录下
+# 安装对应依赖库
+# 安装python3环境
+# cmd执行
 pip install tornado
 pip install schedule
 pip install requests
-cmd 执行
+# cmd 执行
 python F:\qiandao\qiandao\main.py
 
 或者双击main.py即可运行
 
 
-打开127.0.0.1:8888/admin
+# 打开127.0.0.1:8888/admin
 查看签到任务
 
-打开127.0.0.1:8888/time
+# 打开127.0.0.1:8888/time
 查看网站运行时间
 
-打开127.0.0.01:8888/add
+# 打开127.0.0.01:8888/add
 添加签到任务
 
-打开127.0.0.01:8888/list
+# 打开127.0.0.01:8888/list
 查看任务列表
 
 
