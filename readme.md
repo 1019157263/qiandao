@@ -8,8 +8,8 @@
 
 不需要配置数据库！！！
 
-放到：F:\qiandao\qiandao目录下
-安装对应依赖库
+. 放到：F:\qiandao\qiandao目录下
+. 安装对应依赖库
 安装python3环境
 cmd执行
 pip install tornado
